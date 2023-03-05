@@ -13,6 +13,7 @@ repositories {
 
 dependencies {
     implementation("com.google.guava:guava:31.1-jre")
+    implementation("com.github.jnr:jnr-ffi:2.2.13")
 }
 
 tasks.withType<KotlinCompile> {
@@ -21,7 +22,7 @@ tasks.withType<KotlinCompile> {
 
 tasks.withType<Jar> {
     manifest {
-        attributes["Main-Class"] = "MainKt"
+        attributes["Main-Class"] = "com.itspazaz.JagCompressKt"
     }
 
     duplicatesStrategy = DuplicatesStrategy.EXCLUDE

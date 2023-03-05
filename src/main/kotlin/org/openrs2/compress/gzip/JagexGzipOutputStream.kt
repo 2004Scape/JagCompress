@@ -1,3 +1,5 @@
+package org.openrs2.compress.gzip;
+
 import com.google.common.io.LittleEndianDataOutputStream
 import java.io.DataOutputStream
 import java.io.OutputStream
